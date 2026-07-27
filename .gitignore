@@ -1,0 +1,121 @@
+# ============================================================
+# HeAra Graduation Project — .gitignore
+# Covers: Flutter app + Python/FastAPI AI backend (4 components)
+# ============================================================
+
+# ---------- Large datasets & archives (excluded on purpose) ----------
+*.rar
+*.zip
+*.7z
+AI/AI-online/Data*/
+AI/AI-online/Final Data*/
+**/Data 1/
+**/Data 2/
+**/Data 3/
+**/Final Data/
+**/filtered_dataset/
+**/fold*/
+
+# ---------- Trained models & ML artifacts (excluded on purpose) ----------
+# Host these on Google Drive / GitHub Releases instead, and link them in the README
+*.h5
+*.tflite
+*.tfl
+*.pkl
+*.pb
+*.onnx
+*.ckpt
+*.pt
+*.pth
+**/artifacts/
+**/scaler.pkl
+**/*encoder*.pkl
+**/*model*.h5
+
+# ---------- Test / sample audio ----------
+*.wav
+*.mp3
+!**/assets/**/*.wav
+!**/assets/**/*.mp3
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+venv/
+env/
+.venv/
+.env
+.ipynb_checkpoints/
+*.log
+
+# ---------- Firebase / Secrets ----------
+# IMPORTANT: never commit real keys (a previous key was exposed and had to be rotated)
+google-services.json
+GoogleService-Info.plist
+serviceAccountKey.json
+*firebase-adminsdk*.json
+**/*firebase-adminsdk*.json
+firebase_options.dart
+*.env
+.env*
+
+# ---------- Flutter / Dart ----------
+**/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+*.g.dart
+*.freezed.dart
+
+# Android
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/**/GeneratedPluginRegistrant.java
+*.jks
+key.properties
+
+# iOS
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/DerivedData/
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# ---------- IDE / OS ----------
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
